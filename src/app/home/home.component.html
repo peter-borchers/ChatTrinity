@@ -1,0 +1,35 @@
+<section class="main">
+  <div class="container">
+    <ng-container>
+      <div class="row pt-4">
+        <div class="col-12">
+          <h1 class="text-center main-heading">
+            Choose a subject area and type your question below.
+          </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <mat-tab-group [(selectedIndex)]="selectedIndex" (selectedIndexChange)="onIndexChange()">
+            <ng-container *ngFor="let tab of tabs">
+              <mat-tab [label]="tab.heading">
+                <h3 class="text-center ask-question">
+                  Need some help? Try these commonly asked questions.
+                </h3>
+                <div class="row">
+                  <ng-container *ngFor="let question of tab.questions">
+                    <div (click)="selectedTabQuestion = question" class="col-md-6 col-xl-3">
+                      <div class="content-box">
+                        {{ question.question }}
+                      </div>
+                    </div>
+                  </ng-container>
+                </div>
+              </mat-tab>
+            </ng-container>
+          </mat-tab-group>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</section>

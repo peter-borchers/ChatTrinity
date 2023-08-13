@@ -1,0 +1,73 @@
+<div class="chat-wrapper">
+  <ng-container *ngFor="let chat of chats">
+
+    <section *ngIf="chat.sender == 'user'" class="user-question">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex align-items-start">
+              <img src="assets/images/user.png" alt="">
+              <div class="content">
+                <h6 class="m-0" [innerHTML]="chat.data.answer">
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section *ngIf="chat.sender == 'bot'" class="user-answer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex align-items-start">
+              <img src="assets/images/comments.png" alt="">
+              <div class="content">
+                <p *ngIf="chat.isFaq" [innerHTML]="chat.data.answer">{{chat.data.answer}}</p>
+                <p *ngIf="!chat.isFaq" [innerText]="chat.data.answer">{{chat.data.answer}}</p>
+                <ng-container *ngIf="chat.data.sources && chat.data.sources.length">
+                  <a href="javascript:voit(0)" (click)="chat.readMore = !chat.readMore" class="read-more">{{chat.readMore ? 'Show Less': 'Read More'}}</a>
+                  <ng-container *ngIf="chat.readMore">
+                    <ng-container *ngFor="let source of chat.data.sources">
+                      <!-- <p [innerText]="source.content"></p> -->
+                      <ng-container>
+                        <div class="mt-2 link d-flex align-items-center">
+                          <span class="material-icons pe-1">link</span>
+                          <a [href]="source.url" target="_blank">{{source.url}}</a>
+                        </div>
+                      </ng-container>
+                    </ng-container>
+                  </ng-container>
+                </ng-container>
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </ng-container>
+</div>
+
+<section class="reply-box">
+  <div class="container pt-3 pb-3">
+    <div class="row">
+      <div class="col-12">
+        <div class="textarea">
+          <textarea (keyup.enter)="$event.preventDefault();$event.stopPropagation(); sendMessage()" [(ngModel)]="question" [ngModelOptions]="{standalone: true}"
+            placeholder="Type a question (e.g. How can I book an exam?)"></textarea>
+          <img (click)="sendMessage()" src="assets/images/send.png" alt="">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="d-flex align-items-center justify-content-between mt-2 clear-chat">
+          <a href="javascript:void(0)" (click)="onClear()">Clear chat</a>
+          <a [routerLink]="'/about'">How are the answers generated?</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

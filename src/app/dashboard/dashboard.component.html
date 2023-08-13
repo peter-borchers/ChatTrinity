@@ -1,0 +1,4 @@
+<app-header></app-header>
+<app-home *ngIf="!(chat && chat.chats.length)" (setIndex)="selectedIndex = $event" [selectedIndex]="selectedIndex"></app-home>
+<app-faq *ngIf="chat && chat.chats.length" [selectedIndex]="selectedIndex" (setIndex)="selectedIndex = $event"></app-faq>
+<app-chat [selectedIndex]="selectedIndex" [faqQuestionModel]="home && home.selectedTabQuestion"></app-chat>

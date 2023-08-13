@@ -1,0 +1,27 @@
+
+.header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #050505;
+    h1{
+        color: #9f5089;
+        font-weight: bold;
+        padding-right: 30px;
+    }
+    .btn{
+        border: 1px solid #270057;
+        background-color: #9601fd;
+        color: #ffdaff;
+        width: 80px;
+    }
+    .help{
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #323232;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+    }
+}
