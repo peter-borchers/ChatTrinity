@@ -57,7 +57,7 @@
       <div class="col-12">
         <div class="textarea">
           <textarea (keyup.enter)="$event.preventDefault();$event.stopPropagation(); sendMessage()" [(ngModel)]="question" [ngModelOptions]="{standalone: true}"
-            placeholder="Type a question (e.g. How can I book an exam?)"></textarea>
+            placeholder="Type a question (e.g. What angle should I film my piano exam from? or Where can I take my SELT exam?)"></textarea>
           <img (click)="sendMessage()" src="assets/images/send.png" alt="">
         </div>
       </div>
