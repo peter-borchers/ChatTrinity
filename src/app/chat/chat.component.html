@@ -27,7 +27,7 @@
                 <p *ngIf="chat.isFaq" [innerHTML]="chat.data.answer">{{chat.data.answer}}</p>
                 <p *ngIf="!chat.isFaq" [innerText]="chat.data.answer">{{chat.data.answer}}</p>
                 <ng-container *ngIf="chat.data.sources && chat.data.sources.length">
-                  <a href="javascript:voit(0)" (click)="chat.readMore = !chat.readMore" class="read-more">{{chat.readMore ? 'Show Less': 'Read More'}}</a>
+                  <a href="javascript:voit(0)" (click)="chat.readMore = !chat.readMore" class="read-more">{{chat.readMore ? 'Show Less': 'Useful Links With Comprehensive Guidance'}}</a>
                   <ng-container *ngIf="chat.readMore">
                     <ng-container *ngFor="let source of chat.data.sources">
                       <!-- <p [innerText]="source.content"></p> -->
