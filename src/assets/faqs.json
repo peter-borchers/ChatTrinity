@@ -1,8 +1,8 @@
 [
   {
     "heading": "English Language",
-    "url": "https://api.writesonic.com/v1/botsonic/botsonic/generate/2d84fdf8-23cd-4df1-b917-243463d4823f",
-    "token": "35c669e2-6d72-4880-9ae1-0ec1bae119e8",
+    "url": "https://vp3az9kw2c.execute-api.us-east-1.amazonaws.com/prod/v1/botsonic/generate",
+    "token": "bab51e10-66c2-4848-b854-097eb0689665",
     "questions": [
       {
         "question": "How can I book an English Language exam?",
@@ -113,8 +113,8 @@
   },
   {
     "heading": "Drama",
-    "url": "https://api.writesonic.com/v1/botsonic/botsonic/generate/ef46739d-7279-4246-ba82-f99ea90d5f58",
-    "token": "3ffd4586-5e49-4536-9e23-4f11a49df487",
+    "url": "https://vp3az9kw2c.execute-api.us-east-1.amazonaws.com/prod/v1/botsonic/generate",
+    "token": "2764551b-d258-428a-bfb8-68ead4696a76",
     "questions": [
       {
         "question": "How can I enter and book a Drama exam?",
