@@ -55,7 +55,7 @@
   },
   {
     "heading": "Music",
-    "url": "https://vp3az9kw2c.execute-api.us-east-1.amazonaws.com/prod/v1/botsonic/generate/5d33e64d-fb02-4343-8caa-98e40632b243",
+    "url": "https://vp3az9kw2c.execute-api.us-east-1.amazonaws.com/prod/v1/botsonic/generate",
     "token": "35475f31-83d2-4c8f-95bb-56130bf090b6",
     "questions": [
       {
