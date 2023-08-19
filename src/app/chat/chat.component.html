@@ -8,7 +8,7 @@
             <div class="d-flex align-items-start">
               <img src="assets/images/user.png" alt="">
               <div class="content">
-                <h6 class="m-0" [innerHTML]="chat.data.answer">
+                <h6 class="m-0" [innerHTML]="chat.answer">
                 </h6>
               </div>
             </div>
@@ -24,12 +24,12 @@
             <div class="d-flex align-items-start">
               <img src="assets/images/comments.png" alt="">
               <div class="content">
-                <p *ngIf="chat.isFaq" [innerHTML]="chat.data.answer">{{chat.data.answer}}</p>
-                <p *ngIf="!chat.isFaq" [innerText]="chat.data.answer">{{chat.data.answer}}</p>
-                <ng-container *ngIf="chat.data.sources && chat.data.sources.length">
+                <p *ngIf="chat.isFaq" [innerHTML]="chat.answer">{{chat.answer}}</p>
+                <p *ngIf="!chat.isFaq" [innerText]="chat.answer">{{chat.answer}}</p>
+                <ng-container *ngIf="chat.sources && chat.sources.length">
                   <a href="javascript:voit(0)" (click)="chat.readMore = !chat.readMore" class="read-more">{{chat.readMore ? 'Show Less': 'Useful Links With Comprehensive Guidance'}}</a>
                   <ng-container *ngIf="chat.readMore">
-                    <ng-container *ngFor="let source of chat.data.sources">
+                    <ng-container *ngFor="let source of chat.sources">
                       <!-- <p [innerText]="source.content"></p> -->
                       <ng-container>
                         <div class="mt-2 link d-flex align-items-center">

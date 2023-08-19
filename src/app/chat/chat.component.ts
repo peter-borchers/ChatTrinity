@@ -13,6 +13,7 @@ export class ChatComponent implements OnInit, OnChanges  {
   public question!: string;
   public chats: Array<any> = new Array();
   public tabs: Array<any> = Faqs;
+  public loadingMessage = 'Good question, We are working on it...';
   constructor(public apiService: ApiService) { }
 
   ngOnInit() {
@@ -28,18 +29,14 @@ export class ChatComponent implements OnInit, OnChanges  {
   faqQuestion(question: any) {
     const chatQuestionModel = {
       sender: 'user',
-      data: {
-        answer: question.question
-      }
+      answer: question.question
     }
     this.chats.push(chatQuestionModel);
     setTimeout(() => {
       const chatAnswerModel = {
         sender: 'bot',
         isFaq: true,
-        data: {
-          answer: (question.answer as Array<any>).join('')
-        }
+        answer: (question.answer as Array<any>).join('')
       }
       this.chats.push(chatAnswerModel);
     }, 100);
@@ -51,24 +48,28 @@ export class ChatComponent implements OnInit, OnChanges  {
     }
     const chatModel = {
       sender: 'user',
-      data: {
-        answer: this.question
-      }
+      answer: this.question
     }
     this.chats.push(chatModel);
     this.question = '';
     const request = {
       ...this.tabs[this.selectedIndex],
       body: model
+    };
+    const loadingChatModel =  {
+      sender: 'bot',
+      answer: this.loadingMessage
     }
-    this.apiService.sendMessage(request).subscribe((res: Array<any>) => {
-      res = res.map(el => {
-        return  {
-          sender: 'bot',
-          ...el
-        }
-      })
-      this.chats.push(...res);
+    this.chats.push(loadingChatModel);
+    this.apiService.sendMessage(request).subscribe((res: any) => {
+      res = {
+        sender: 'bot',
+      ...res
+    };
+      this.chats.splice(1, this.chats.length - 1);
+      this.chats.push(res);
+    }, (error: any) => {
+      this.chats.splice(1, this.chats.length - 1);
     })
   }
   onClear() {
