@@ -66,10 +66,10 @@ export class ChatComponent implements OnInit, OnChanges  {
         sender: 'bot',
       ...res
     };
-      this.chats.splice(1, this.chats.length - 1);
+      this.chats.splice(this.chats.length - 1, 1);
       this.chats.push(res);
     }, (error: any) => {
-      this.chats.splice(1, this.chats.length - 1);
+      this.chats.splice(this.chats.length - 1, 1);
     })
   }
   onClear() {
