@@ -34,7 +34,7 @@
                       <ng-container>
                         <div class="mt-2 link d-flex align-items-center">
                           <span class="material-icons pe-1">link</span>
-                          <a [href]="source.url" target="_blank">{{source.url}}</a>
+                          <a [href]="source.url" target="_blank">{{getSourceName(source.url)}}</a>
                         </div>
                       </ng-container>
                     </ng-container>
@@ -64,6 +64,7 @@
       <div class="col-12">
         <div class="d-flex align-items-center justify-content-between mt-2 clear-chat">
           <a href="javascript:void(0)" (click)="onClear()">Clear chat</a>
+          <a [routerLink]="'/about'">Want to contact a human instead?</a>
           <a [routerLink]="'/about'">How are the answers generated?</a>
         </div>
 

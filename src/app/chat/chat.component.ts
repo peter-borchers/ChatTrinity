@@ -13,7 +13,9 @@ export class ChatComponent implements OnInit, OnChanges  {
   public question!: string;
   public chats: Array<any> = new Array();
   public tabs: Array<any> = Faqs;
-  public loadingMessage = 'Good question, We are working on it...';
+  public loadingMessage = 'Good question, we\'re working on it...';
+  private readonly awsPrefix = "botsonic.s3.amazonaws.com/";
+
   constructor(public apiService: ApiService) { }
 
   ngOnInit() {
@@ -74,5 +76,13 @@ export class ChatComponent implements OnInit, OnChanges  {
   }
   onClear() {
     this.chats = new Array();
+  }
+   public getSourceName(url: string): string {
+    if (url.includes(this.awsPrefix)) {
+      const splittedFilename = url.split(this.awsPrefix)[1].split(".");
+      splittedFilename.shift();
+      return splittedFilename.join(".");
+    }
+    return url.replace("https://", "");
   }
 }
