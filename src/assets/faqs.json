@@ -15,6 +15,37 @@
         ]
       },
       {
+        "question": "Which exam do I need to take for my UK visa application?",
+        "answer": [
+          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>Trinity Secure English Language Tests (SELTs) are approved for applications to UKVI for visas, UK visa renewal, British Citizenship, Settlement and Leave to Remain. The required test depends on the type of visa you are applying for. Visit <a href='https://www.trinitycollege.com/qualifications/SELT'>https://www.trinitycollege.com/qualifications/SELT</a> for a full description of which test is required for each visa type. </p>",
+          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>Alternatively, please ask another question with specific reference to the type of visa you are applying for.</p>",
+          "</ul>"
+        ]
+      },
+      {
+        "question": "How do I prepare for the GESE & ISE exams?",
+        "answer": [
+          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'><strong>Graded Examinations in Spoken English (GESE)</strong></p>",
+          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>Trinity offers a wide range of free English language exam preparation resources and teaching materials for each stage and grade, including teacher guidance, exam information, classroom activities, sample papers and videos. Please visit the following pages for GESE preparation resources:</p>",
+          "<ul class='decimal_type' style='list-style-type: disc;margin-left:25.700000000000003px;'>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/GESE/GESE-grades-1-3-initial-resources'>Grades 1-3</a> - Initial stage: Pre-A1-A2.1</li>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/GESE/GESE-grades-4-6-elementary-resources'>Grades 4-6</a> - Elementary stage: A2.2-B1.2</li>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/GESE/GESE-grades-7-9-intermediate-resources'>Grades 7- 9</a> - Intermediate stage: B2.1-B2.3</li>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/GESE/GESE-grades-10-12-advanced-resources'>Grades 10-12</a> - Advanced stage: C1.1-C2</li>",
+          "</ul>",
+          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'><strong>Integrated Skills in English (ISE)</strong></p>",
+          "<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>To prepare for the ISE exams, you can find guidance and practice materials on the <a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/ISE/ISE-student-information'>ISE student information page</a>.&nbsp;</p>",
+          "<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>Here is a full list of the ISE student guides:</p>",
+          "<ul style='list-style-type: disc;margin-left:-0.25in;'>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/resource/?id=6294' target='_blank' title='PDF opens in new window'>Guide for Students &ndash; ISE Foundation&nbsp;- (A2)</a></li>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/resource/?id=6295' target='_blank' title='Guide for Students - ISE I'>Guide for Students &ndash; ISE I - (B1)</a>&nbsp;</li>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/resource/?id=6296' target='_blank' title='PDF opens in new window'>Guide for Students &ndash; ISE II - (B2)</a>&nbsp;</li>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/resource/?id=6297' target='_blank' title='PDF opens in new window'>Guide for Students &ndash; ISE III - (C1)</a>&nbsp;</li>",
+          "<li><a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/ISE/ISE-IV-C2-resources'>Information about ISE IV (C2)</a></li>",
+          "</ul>"
+        ]
+      },
+      {
         "question": "Please provide an overview of the Graded Examinations in Spoken English (GESE) exams.",
         "answer": [
           "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>GESE exams are for people of all ages who want to develop communicative English language speaking and listening skills for use in real life. The exams are conducted in person by highly trained Trinity examiners and consist of a one-to-one conversation.&nbsp;</p>",
@@ -26,29 +57,6 @@
           "<li><a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/GESE/GESE-grades-7-9-intermediate-resources'>Grades 7- 9</a> - Intermediate stage: B2.1-B2.3</li>",
           "<li><a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/GESE/GESE-grades-10-12-advanced-resources'>Grades 10-12</a> - Advanced stage: C1.1-C2</li>",
           "</ul>"
-        ]
-      },
-      {
-        "question": "Where can I download GESE Gr 5 student resources?",
-        "answer": [
-          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>You can download GESE Grade 5 student resources from the Trinity website.</p>",
-          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>We offer a <a target='_blank' href='https://apps.apple.com/us/app/trinity-gese/id1504078648'>Trinity GESE Study App</a>, a <a target='_blank' href='http://trinitycollege.com/resource/?id=6476'>Guide and Preparation for Candidates</a>, <a target='_blank' href='http://trinitycollege.com/resource/?id=6482'>Preparation Activities for GESE Grade 5 worksheet</a>, and <a target='_blank' href='http://trinitycollege.com/resource/?id=5755'>GESE Grade 5 in Trinity&apos;s GESE exam information booklet</a>. These resources can help you understand and prepare for the exam.</p>",
-          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>Teachers can also download a <a target='_blank' href='http://trinitycollege.com/resource/?id=6540'>GESE Elementary Steps - Guide for Teachers, Grades 4-6</a>.</p>"
-        ]
-      },
-      {
-        "question": "How can I prepare for the ISE Exams?",
-        "answer": [
-          "<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>To prepare for the ISE exams, you can find guidance and practice materials on the <a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/ISE/ISE-student-information'>ISE student information page</a>.&nbsp;</p>",
-          "<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;font-size:11.0pt;font-family:'Calibri',sans-serif;'>Here is a full list of the ISE student guides:</p>",
-          "<ul style='list-style-type: disc;margin-left:-0.25in;'>",
-          "<li><a target='_blank' href='https://www.trinitycollege.com/resource/?id=6294' target='_blank' title='PDF opens in new window'>Guide for Students &ndash; ISE Foundation&nbsp;- (A2)</a></li>",
-          "<li><a target='_blank' href='https://www.trinitycollege.com/resource/?id=6295' target='_blank' title='Guide for Students - ISE I'>Guide for Students &ndash; ISE I - (B1)</a>&nbsp;</li>",
-          "<li><a target='_blank' href='https://www.trinitycollege.com/resource/?id=6296' target='_blank' title='PDF opens in new window'>Guide for Students &ndash; ISE II - (B2)</a>&nbsp;</li>",
-          "<li><a target='_blank' href='https://www.trinitycollege.com/resource/?id=6297' target='_blank' title='PDF opens in new window'>Guide for Students &ndash; ISE III - (C1)</a>&nbsp;</li>",
-          "<li><a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/ISE/ISE-IV-C2-resources'>Information about ISE IV (C2)</a></li>",
-          "</ul>",
-          "<p style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;font-size:11.0pt;font-family:'Calibri,sans-serif;'>Additionally, you can explore the <a target='_blank' href='https://www.trinitycollege.com/qualifications/english-language/ISE/ISE-levels'>general ISE resource area</a> for the specific level of ISE you are taking. This resource area provides information, ideas, and activities used by teachers that you can also use for self-study.&nbsp;</p>"
         ]
       }
     ]
