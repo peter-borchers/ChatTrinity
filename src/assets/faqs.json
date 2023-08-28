@@ -1,7 +1,7 @@
 [
   {
     "heading": "English Language",
-    "url": "https://vp3az9kw2c.execute-api.us-east-1.amazonaws.com/prod/v1/botsonic/generate",
+    "url": "https://api.botsonic.ai/v1/botsonic/generate",
     "token": "bab51e10-66c2-4848-b854-097eb0689665",
     "questions": [
       {
@@ -63,7 +63,7 @@
   },
   {
     "heading": "Music",
-    "url": "https://vp3az9kw2c.execute-api.us-east-1.amazonaws.com/prod/v1/botsonic/generate",
+    "url": "https://api.botsonic.ai/v1/botsonic/generate",
     "token": "35475f31-83d2-4c8f-95bb-56130bf090b6",
     "questions": [
       {
@@ -121,7 +121,7 @@
   },
   {
     "heading": "Drama",
-    "url": "https://vp3az9kw2c.execute-api.us-east-1.amazonaws.com/prod/v1/botsonic/generate",
+    "url": "https://api.botsonic.ai/v1/botsonic/generate",
     "token": "2764551b-d258-428a-bfb8-68ead4696a76",
     "questions": [
       {
