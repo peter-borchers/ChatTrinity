@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-12">
             <div class="d-flex align-items-start">
-              <img src="assets/images/user.png" alt="">
+              <img src="assets/images/Question.png" alt="">
               <div class="content">
                 <h6 class="m-0" [innerHTML]="chat.answer">
                 </h6>
@@ -22,10 +22,10 @@
         <div class="row">
           <div class="col-12">
             <div class="d-flex align-items-start">
-              <img src="assets/images/comments.png" alt="">
+              <img src="assets/images/TrinityAnswer.png" alt="">
               <div class="content">
                 <p *ngIf="chat.isFaq" [innerHTML]="chat.answer">{{chat.answer}}</p>
-                <p *ngIf="!chat.isFaq" [innerText]="chat.answer">{{chat.answer}}</p>
+                <p *ngIf="!chat.isFaq" [innerHTML]="chat.answer">{{chat.answer}}</p>
                 <ng-container *ngIf="chat.sources && chat.sources.length">
                   <a href="javascript:voit(0)" (click)="chat.readMore = !chat.readMore" class="read-more">{{chat.readMore ? 'Show Less': 'Citations and Useful Links'}}</a>
                   <ng-container *ngIf="chat.readMore">
@@ -64,7 +64,6 @@
       <div class="col-12">
         <div class="d-flex align-items-center justify-content-between mt-2 clear-chat">
           <a href="javascript:void(0)" (click)="onClear()">Clear chat</a>
-          <a [routerLink]="'/about'">Want to contact a human instead?</a>
           <a [routerLink]="'/about'">How are the answers generated?</a>
         </div>
 

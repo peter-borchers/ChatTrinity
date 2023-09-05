@@ -21,13 +21,13 @@ body {
 
     .main-heading {
         color: #040404;
-        font-weight: bold;
+        font-weight: normal;
         margin-bottom: 30px;
     }
 
     .ask-question {
         color: #040404;
-        font-weight: bold;
+        font-weight: normal;
         margin-bottom: 20px;
     }
 }
@@ -57,7 +57,7 @@ body {
     .mat-mdc-tab .mdc-tab__text-label,
     .mat-mdc-tab-link .mdc-tab__text-label {
         color: #692160;
-        font-weight: bold;
+        font-weight: normal;
     }
 
     .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label,
@@ -76,6 +76,7 @@ body {
 
     .mat-mdc-tab-header {
         margin-bottom: 70px;
+        
     }
 
     .mat-mdc-tab-body-content {
@@ -121,7 +122,7 @@ body {
 
         &::placeholder {
             color: #ababab;
-            font-weight: bold;
+            font-weight: normal;
             font-size: 16px;
         }
     }

@@ -52,7 +52,7 @@ export class ChatComponent implements OnInit, OnChanges  {
       sender: 'user',
       answer: this.question
     }
-    this.chats.push(chatModel);
+    this.chats.push(chatModel);//adding the typed question to the chats array and therefore to the page
     this.question = '';
     const request = {
       ...this.tabs[this.selectedIndex],
@@ -62,14 +62,15 @@ export class ChatComponent implements OnInit, OnChanges  {
       sender: 'bot',
       answer: this.loadingMessage
     }
-    this.chats.push(loadingChatModel);
+    this.chats.push(loadingChatModel);//adding the holding message to the chats array and therefor the page.
     this.apiService.sendMessage(request).subscribe((res: any) => {
       res = {
         sender: 'bot',
       ...res
-    };
-      this.chats.splice(this.chats.length - 1, 1);
-      this.chats.push(res);
+      };
+      this.chats.splice(this.chats.length - 1, 1);//remove the loading message
+      res.answer = this.transformToHyperlinks(res.answer);//replace hyperlinks
+      this.chats.push(res);//add the new answer to the array
     }, (error: any) => {
       this.chats.splice(this.chats.length - 1, 1);
     })
@@ -85,4 +86,15 @@ export class ChatComponent implements OnInit, OnChanges  {
     }
     return url.replace("https://", "");
   }
+
+  public transformToHyperlinks(paragraph: string): string {
+    // Regular expression with 'g' flag to match all occurrences
+    const regex = /\[(.*?)\]\((.*?)\)/g;
+    
+    // Use String.replace() to transform all matching patterns into hyperlinks
+    return paragraph.replace(regex, (match, displayText, target) => {
+      return `<a href="${target}" target="_blank">${displayText}</a>`;
+    });
+  }
+
 }
