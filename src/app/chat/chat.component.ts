@@ -1,6 +1,7 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import Faqs from '../../assets/faqs.json';
 import { ApiService } from '../api.service';
+import { v4 as uuidv4 } from 'uuid';
 
 @Component({
   selector: 'app-chat',
@@ -15,6 +16,7 @@ export class ChatComponent implements OnInit, OnChanges  {
   public tabs: Array<any> = Faqs;
   public loadingMessage = 'Good question, we\'re working on it...';
   private readonly awsPrefix = "botsonic.s3.amazonaws.com/";
+  public chatId = uuidv4(); //Peter: I do not know if the scope of this variable is correct.
 
   constructor(public apiService: ApiService) { }
 
@@ -46,7 +48,10 @@ export class ChatComponent implements OnInit, OnChanges  {
   sendMessage() {
     const model = {
       input_text: this.question,
-      chat_history: []
+      chat_history: [],
+      chat_id: this.chatId
+      //chat_id: "ed91d7da-8929-4750-a78f-586dffa12105"
+
     }
     const chatModel = {
       sender: 'user',
