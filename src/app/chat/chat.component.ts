@@ -49,9 +49,8 @@ export class ChatComponent implements OnInit, OnChanges  {
     const model = {
       input_text: this.question,
       chat_history: [],
-      chat_id: this.chatId
-      //chat_id: "ed91d7da-8929-4750-a78f-586dffa12105"
-
+      chat_id: this.chatId,
+      response_type: "html"
     }
     const chatModel = {
       sender: 'user',
